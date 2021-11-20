@@ -35,14 +35,10 @@ export default function App() {
       name,
       number,
     };
-    console.log(contact);
-    console.log(contact.name);
     const nameInContact = contact.name.toLowerCase().trim();
     const isInContact = contacts.find(
       (cont) => cont.name.toLowerCase().trim() === nameInContact
     );
-    console.log(contact.name);
-    console.log(isInContact);
     if (isInContact) {
       alert(`${contact.name} is already in contact`);
       return;
